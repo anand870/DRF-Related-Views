@@ -1,6 +1,7 @@
 from django.conf.urls import url,include
+from views import BookListView
 
 urlpatterns = [
-    url(r'^books/', BookListView.as_view(),name="booklist"),
+    url(r'', BookListView.as_view(),name="booklist"),
 ]
 

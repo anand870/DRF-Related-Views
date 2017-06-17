@@ -1,10 +1,322 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title></title>
-</head>
-<body>
-    <h1>Hi I am here</h1>
-</body>
-</html>
+{% extends "core/baselayout.html" %}
+{% block css %}
+    <style>
+    .filter-con{
+        margin-top:20px;
+        padding-left:20px;
+    }
+    .filter-box{
+        margin-top:10px;
+        margin-bottom:10px;
+    } 
+    .filter-title{
+        font-weight:bold;
+        font-size:18px;
+        align:center;
+    }
+    .filter-body{
+        padding:5px;
+        display:block;
+    }
+    ul{
+        list-style:none;
+    }
+    .sort-bar{
+        display:block;
+        min-height:40px;
+        margin:10px 10px 20px 0;
+    }
+    .list-item{
+        margin-bottom:5px;
+    }
+    .side-bar{
+        margin-top:50px;
+        padding:10px;
+
+    }
+    .tag-cloud a{
+        display:inline-block;
+    }
+    </style>
+
+{% endblock css %}
+{% block body %}
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 filter-con">
+                <div><a href="#" class="pull-md-right">Filter</a></div>
+                <div class="filter-box">
+                    <div class="filter-title">Authors</div>
+                    <div class="filter-body">
+                        <ul class="list-group">
+                            <li>
+                                <input type="checkbox">
+                                <label>ABC</label>
+                            </li>
+
+                        </ul>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-7">
+                <div class="row sort-bar">
+                    <span>Sort By:</span>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-secondary">Price</button>
+                        <button type="button" class="btn btn-secondary">Rating</button>
+                        <button type="button" class="btn btn-secondary">Release date</button>
+
+                    </div>
+
+                </div>
+                <div class="row list-item">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=600" class="w-100">
+                                </div>
+                                <div class="col-md-10 px-3">
+                                    <div class="card-block px-3">
+                                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4> 
+                                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    
+                </div>
+                <div class="row list-item">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=600" class="w-100">
+                                </div>
+                                <div class="col-md-10 px-3">
+                                    <div class="card-block px-3">
+                                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4> 
+                                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    
+                </div>
+                <div class="row list-item">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=600" class="w-100">
+                                </div>
+                                <div class="col-md-10 px-3">
+                                    <div class="card-block px-3">
+                                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4> 
+                                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    
+                </div>
+                <div class="row list-item">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=600" class="w-100">
+                                </div>
+                                <div class="col-md-10 px-3">
+                                    <div class="card-block px-3">
+                                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4> 
+                                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    
+                </div>
+                <div class="row list-item">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=600" class="w-100">
+                                </div>
+                                <div class="col-md-10 px-3">
+                                    <div class="card-block px-3">
+                                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4> 
+                                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    
+                </div>
+                <div class="row list-item">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=600" class="w-100">
+                                </div>
+                                <div class="col-md-10 px-3">
+                                    <div class="card-block px-3">
+                                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4> 
+                                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    
+                </div>
+                <div class="row list-item">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=600" class="w-100">
+                                </div>
+                                <div class="col-md-10 px-3">
+                                    <div class="card-block px-3">
+                                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4> 
+                                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    
+                </div>
+                <div class="row list-item">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=600" class="w-100">
+                                </div>
+                                <div class="col-md-10 px-3">
+                                    <div class="card-block px-3">
+                                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4> 
+                                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    
+                </div>
+                <div class="row list-item">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=600" class="w-100">
+                                </div>
+                                <div class="col-md-10 px-3">
+                                    <div class="card-block px-3">
+                                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4> 
+                                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    
+                </div>
+                <div class="row list-item">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=600" class="w-100">
+                                </div>
+                                <div class="col-md-10 px-3">
+                                    <div class="card-block px-3">
+                                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4> 
+                                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    
+                </div>
+                <div class="row list-item">
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-md-2">
+                                    <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=400%C3%97400&w=400&h=600" class="w-100">
+                                </div>
+                                <div class="col-md-10 px-3">
+                                    <div class="card-block px-3">
+                                        <h4 class="card-title">Lorem ipsum dolor sit amet</h4> 
+                                        <p class="card-text">Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                        <a href="#" class="btn btn-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    
+                </div>
+		<nav aria-label="Page navigation example">
+		  <ul class="pagination justify-content-center">
+		    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+		    <li class="page-item"><a class="page-link" href="#">1</a></li>
+		    <li class="page-item"><a class="page-link" href="#">2</a></li>
+		    <li class="page-item"><a class="page-link" href="#">3</a></li>
+		    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+		  </ul>
+		</nav>
+            </div>
+            <div class="col-md-3 side-bar">
+                <div class="container tag-cloud">
+                <h3>Tag Cloud</h3>
+                <div class="row">
+                    <a class="size-6">Tag1</a>
+                    <a class="size-5">Tag1</a>
+                    <a class="size-8">Tag1</a>
+                    <a class="size-3">Tag1</a>
+                    <a class="size-5">Tag1</a>
+                    <a class="size-10">Tag1</a>
+                </div>
+                </div>
+                <hr>
+                <div class="container">
+                    <h3>Featured Books</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">Learning Python</li>
+                        <li class="list-group-item">Learning Python</li>
+                        <li class="list-group-item">Learning Python</li>
+                        <li class="list-group-item">Learning Python</li>
+
+                    </ul>
+                </div>
+                <hr>
+                <div class="container">
+                    <h3>Top Rated Books</h3>
+                    <ul class="list-group">
+                        <li class="list-group-item">Learning Python</li>
+                        <li class="list-group-item">Learning Python</li>
+                        <li class="list-group-item">Learning Python</li>
+                        <li class="list-group-item">Learning Python</li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    
+    </div>
+
+{% endblock body %}
+

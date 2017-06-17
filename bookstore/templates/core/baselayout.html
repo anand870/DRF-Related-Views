@@ -2,11 +2,125 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title></title>
+	<style>
+.featurette {
+    display: table;
+    width: 100%;
+    height: 30%; /* set a pixel height and then remove the body,html height */
+    vertical-align: middle;
+    background: #555;
+    color: #fff;
+}
+.featurette-inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+.featurette .search {
+    padding: 3%;
+    max-width: 980px; /*max width of search*/
+    margin: 0 auto;
+}
+.no-margin-top {
+    margin-top: 0
+}
+
+
+/* ------ form-control-lg */
+.form-control-lg {
+    min-height: 46px;
+    border-radius: 6px;
+    font-size: 18px;
+    line-height: normal;
+}
+
+
+/* ------ disjointed form group custom */
+.featurette .search.has-button .btn {
+    margin-top: 5px;
+    width: 100%;
+}
+@media (min-width:480px) { 
+	.featurette .search.has-button .form-group {
+	    position: relative;
+	    padding-right: 99px; /*space for button*/
+	}
+	.featurette .search.has-button .btn {
+	    position: absolute;
+	    top: 0;
+	    right: 0;
+	    width: auto;
+	    margin: 0;
+	}
+}
+.tag-cloud a{
+    display:inline-block;
+    padding:5px;
+}
+.tag-cloud a.size-1 { font-size: 1.1em }
+.tag-cloud a.size-2 { font-size: 1.2em }
+.tag-cloud a.size-3 { font-size: 1.3em }
+.tag-cloud a.size-4 { font-size: 1.4em }
+.tag-cloud a.size-5 { font-size: 1.5em }
+.tag-cloud a.size-6 { font-size: 1.6em }
+.tag-cloud a.size-7 { font-size: 1.7em }
+.tag-cloud a.size-8 { font-size: 1.8em }
+.tag-cloud a.size-9 { font-size: 1.9em }
+.tag-cloud a.size-10 { font-size: 2em }
+        </style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+       {% block css %} {% endblock css%}
+ 
 </head>
 <body>
+<nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#">MyStore</a>
+  <!--<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
+    </ul>
+  </div>-->
+</nav>
+    <div class="featurette">
+       <div class="featurette-inner text-center">
+          <form role="form" class="search">
+             <h3 class="no-margin-top h1">Find Your Book</h3>
+             <div class="input-group input-group-lg">
+                <input type="search" placeholder="search" class="form-control">
+                <span class="input-group-btn">
+                <button class="btn btn-danger" type="button">Search</button>
+                </span>
+             </div>
+             <!-- /input-group -->
+          </form>
+          <!-- /.max-width on this form -->
+          
+       </div>
+       <!-- /.featurette-inner (display:table-cell) -->
+    </div>
+    
     {% block body %}
 
     {% endblock body %}
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  
 </body>
 </html>
