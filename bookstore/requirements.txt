@@ -1,0 +1,7 @@
+Django==1.11.2
+django-debug-toolbar==1.8
+djangorestframework==3.6.3
+olefile==0.44
+Pillow==4.1.1
+pytz==2017.2
+sqlparse==0.2.3
