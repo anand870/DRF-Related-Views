@@ -45,11 +45,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'debug_toolbar',
     'rest_framework',
+    'django_filters',
     'relatedviews',
     'core',
     'book',
 ]
-
+APPEND_SLASH = True
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

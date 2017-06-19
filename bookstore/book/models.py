@@ -3,6 +3,8 @@ from django.db import models
 
 class Publication(models.Model):
     name = models.CharField(max_length=100)
+    def __unicode__(self):
+        return self.name
 
 class Book(models.Model):
     title = models.CharField(max_length=200)
@@ -14,6 +16,7 @@ class Book(models.Model):
     authors = models.ManyToManyField("Author")
     genere = models.ManyToManyField("Genere")
     publication = models.ForeignKey("Publication",on_delete=models.SET_NULL,null=True)
+    featured = models.BooleanField(default=False)
     def __unicode__(self):
         return self.title
 
